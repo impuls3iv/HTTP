@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index view</title>
+  </head>
+  <body>
+    <h1>Welcome to to do list!!!</h1>
+    <h3>You have <%= @to_do_count %> to-dos missing</h3>
+    <ol>
+    <% @todos.each do |todo| %>
+      <li><%= todo  %></li>
+    <% end %>
+  </ol>
+    </body>
+</html>
